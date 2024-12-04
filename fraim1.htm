@@ -1,0 +1,47 @@
+<html>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<h1>Тут всякое</h1>
+<style>
+        .image-button {
+            width: 100px;
+            height: 100px;
+            background-image: url('Переход на первую.png');
+            background-size: cover;
+            border: none;
+            cursor: pointer;
+	    background-color: transparent;
+        }
+    </style>
+<body>
+<button class="image-button" onclick="closeFrames()">.</button>
+
+    <script>
+function closeFrames() {
+            top.location.href = 'index.htm'
+        }
+    </script>
+<br>
+Эта штука определит, введено ли в поле слово камень
+<br>
+<form name="form1">
+<input type="text" name="text1" id = "123" size="20" placeholder="Введите слово" maxlength="200" value="">
+<br>
+<input type="text" name="text2" id = "321" size="20" placeholder="Тут будет ответ" maxlength="200" value="">
+
+<input type="button" value="Узнать, введено ли слово камень" OnClick=F()>
+</form>
+
+<script>
+function F()
+{
+var I = document.getElementById("123").value
+if (I==="камень")
+{
+document.getElementById("321").value = "Введено верное слово"
+}
+else document.getElementById("321").value = "Неправильное слово"
+}
+</script>
+
+</body>
+</html>
